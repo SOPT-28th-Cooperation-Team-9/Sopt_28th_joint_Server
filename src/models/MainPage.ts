@@ -12,7 +12,7 @@ const MainPageSchema = new mongoose.Schema({
     ],
     worldLiterature:[
         {
-            images:{type:String},
+            image:{type:String},
             title:{type:String},
             writer:{type:String},
             clipTime:{type:String},
