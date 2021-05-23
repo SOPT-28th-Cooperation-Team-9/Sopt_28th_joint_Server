@@ -2,14 +2,16 @@ import express from "express";
 
 const router=express.Router();
 
-import mainpage from "../models/MainPage"
-//import mainpage from "../models/mainpage";
+import MainPage from "../models/MainPage"
 
-router.get("/mainPage",async(req,res)=>{
+
+router.get('/',async(req,res)=>{
     try{
-        const MainPages=await mainpage.find();
+        console.log("mainpage");
+        const MainPages=MainPage.find();
         res.json(MainPages);
     }catch(error){
+        console.log(res.json(MainPage.find()));
         console.error(error.message);
         res.status(500).send("Server Error");
     } 
