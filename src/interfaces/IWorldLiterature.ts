@@ -6,3 +6,11 @@ export interface IWorldLiterature{
     rentPrice:string;
     price:string;
 }
+
+export interface IWorldLiteratureDTO{
+    image:string;
+    title:string;
+    writer:string;
+    clipTime:string;
+    rentPrice:string;
+}

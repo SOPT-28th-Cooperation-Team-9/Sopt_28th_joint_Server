@@ -5,7 +5,7 @@ import {IPoem} from './IPoem'
 
 export interface IMainPages{
     choiceBook:[IChoiceBook];
-    worldLiterature : [IWorldLiterature];
-    topicBook : [ITopicBook];
-    poem : [IPoem];
+    worldLiterature: [IWorldLiterature];
+    topicBook?: [ITopicBook];
+    poem?: [IPoem];
 }
